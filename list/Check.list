@@ -1,74 +1,85 @@
-IP-CIDR,142.251.215.0/24,no-resolve
+# 网络检测综合规则：IP、DNS、IPv6 检测与测速
+# 更新日期：2026-09-24（北京时间）
+# 规范字段空格和域名大小写后按完整规则去重。
+# 保留不同匹配类型与范围，包括精确域名、后缀及关键词规则。
+# 继承上游的共享域名和 IP 网段，匹配范围可能超出检测网站。
+# 建议放在流媒体、国外通用规则之前，统一使用检测策略组。
+#
+# [1] Check / liandu2024
+# 来源：https://raw.githubusercontent.com/liandu2024/clash/main/list/Check.list
+# Git blob：225a6732d89b28a21bca73c8a0c2d818c6bd7914
+# [2] Speedtest / Blackmatrix7
+# 来源：https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.list
+# Git blob：868d80c833a214f8c7e75edda607cb6cf037b71e
+#
+# 合并前 67 条；去重后 64 条；删除重复 3 条。
 
-DOMAIN-SUFFIX,yalala.com
-DOMAIN-SUFFIX,whois.pconline.com.cn
-DOMAIN-SUFFIX,ipip.net
-DOMAIN-SUFFIX,b0.upaiyun.com
-DOMAIN-SUFFIX,asn247.net
-DOMAIN-SUFFIX,astrill.org
-DOMAIN-SUFFIX,ipinfo.io
-
-DOMAIN-SUFFIX,vultr.com
-DOMAIN-SUFFIX,test-ipv6.com
-DOMAIN-SUFFIX,ipw.cn
-
-DOMAIN-SUFFIX,ipcheck.im
+# ===== 来源：[1] Check / liandu2024 =====
 DOMAIN,challenges.cloudflare.com
 DOMAIN,speed.cloudflare.com
-DOMAIN-SUFFIX,fast.com
-# DOMAIN,ichnaea-web.netflix.com
-# DOMAIN-SUFFIX,1.oca.nflxvideo.net
-DOMAIN-SUFFIX,speedcheck.org
-DOMAIN-SUFFIX,speedtest.net
-DOMAIN-SUFFIX,speedtest.cn
-DOMAIN-SUFFIX,ustc.edu.cn
-DOMAIN-SUFFIX,dnscheck.tools
-DOMAIN-SUFFIX,whoer.net
-DOMAIN-SUFFIX,browserleaks.com
-DOMAIN-SUFFIX,browserleaks.org
-DOMAIN-SUFFIX,browserleaks.net
-DOMAIN-SUFFIX,dnsleaktest.org
 DOMAIN-SUFFIX,1-b.net
-DOMAIN-SUFFIX,workers.dev
-DOMAIN-SUFFIX,jsonp-ip.com
-DOMAIN-SUFFIX,sspanel.net
-
-DOMAIN-SUFFIX,dnsleaktest.com
-DOMAIN-SUFFIX,browserscan.net
-DOMAIN-SUFFIX,surfshark.com
-DOMAIN-SUFFIX,surfsharkdns.com
-DOMAIN-SUFFIX,ip-api.com
-
-DOMAIN-SUFFIX,ipleak.net
-DOMAIN-SUFFIX,ip-score.com
 DOMAIN-SUFFIX,888005.xyz
+DOMAIN-SUFFIX,addr.tools
+DOMAIN-SUFFIX,asn247.net
+DOMAIN-SUFFIX,astrill.org
+DOMAIN-SUFFIX,b0.upaiyun.com
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.net
+DOMAIN-SUFFIX,browserleaks.org
+DOMAIN-SUFFIX,browserscan.net
+DOMAIN-SUFFIX,dnscheck.tools
+DOMAIN-SUFFIX,dnsleaktest.com
+DOMAIN-SUFFIX,dnsleaktest.org
+DOMAIN-SUFFIX,ifconfig.me
 DOMAIN-SUFFIX,incolumitas.com
-
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,ip-score.com
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ip111.cn
+DOMAIN-SUFFIX,ip125.com
+DOMAIN-SUFFIX,ip2proxy.com
+DOMAIN-SUFFIX,ipaddress.me
+DOMAIN-SUFFIX,ipcheck.im
+DOMAIN-SUFFIX,ipify.org
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipip.net
+DOMAIN-SUFFIX,ipleak.net
+DOMAIN-SUFFIX,ipw.cn
+DOMAIN-SUFFIX,jsonp-ip.com
+DOMAIN-SUFFIX,l.google.com
+DOMAIN-SUFFIX,null-addr.biz
 DOMAIN-SUFFIX,null-addr.com
+DOMAIN-SUFFIX,null-addr.info
 DOMAIN-SUFFIX,null-addr.net
 DOMAIN-SUFFIX,null-addr.org
-DOMAIN-SUFFIX,null-addr.biz
-DOMAIN-SUFFIX,null-addr.info
-DOMAIN-SUFFIX,addr.tools
-
-DOMAIN-SUFFIX,ifconfig.me
-DOMAIN-SUFFIX,ip125.com
-DOMAIN-SUFFIX,skk.moe
-DOMAIN-SUFFIX,ip111.cn
-DOMAIN-SUFFIX,vultr.com
 DOMAIN-SUFFIX,ping0.cc
-DOMAIN-SUFFIX,incolumitas.com
-DOMAIN-SUFFIX,ip.sb
-DOMAIN-SUFFIX,ipify.org
-DOMAIN-SUFFIX,whoer.com
-DOMAIN-SUFFIX,whatismyip.com.tw
-DOMAIN-SUFFIX,whatismyip.com
-DOMAIN-SUFFIX,whoisip.me
-DOMAIN-SUFFIX,ipaddress.me
-DOMAIN-SUFFIX,ip2proxy.com
+DOMAIN-SUFFIX,skk.moe
+DOMAIN-SUFFIX,speedcheck.org
+DOMAIN-SUFFIX,speedtest.cn
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,sspanel.net
+DOMAIN-SUFFIX,surfshark.com
+DOMAIN-SUFFIX,surfsharkdns.com
+DOMAIN-SUFFIX,test-ipv6.com
+DOMAIN-SUFFIX,ustc.edu.cn
 DOMAIN-SUFFIX,vpnapi.io
-
-
+DOMAIN-SUFFIX,vultr.com
+DOMAIN-SUFFIX,whatismyip.com
+DOMAIN-SUFFIX,whatismyip.com.tw
+DOMAIN-SUFFIX,whoer.com
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,whois.pconline.com.cn
+DOMAIN-SUFFIX,whoisip.me
+DOMAIN-SUFFIX,workers.dev
+DOMAIN-SUFFIX,yalala.com
+IP-CIDR,142.251.215.0/24,no-resolve
 IP-CIDR,74.125.250.129/24,no-resolve
 
-DOMAIN-SUFFIX,l.google.com
+# ===== 来源：[1] Check / liandu2024、[2] Speedtest / Blackmatrix7 =====
+DOMAIN-SUFFIX,fast.com
+
+# ===== 来源：[2] Speedtest / Blackmatrix7 =====
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,speed.dler.io
