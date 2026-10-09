@@ -1,0 +1,41 @@
+name: Update Russia rules
+
+on:
+  schedule:
+    # 19:37 UTC = 03:37 Asia/Shanghai on the next day.
+    - cron: '37 19 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_ru.py
+      - .github/workflows/update-ru.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-ru-list
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+      - name: Download and validate upstream rules
+        run: python3 scripts/update_ru.py
+      - name: Commit changes only when the list changed
+        run: |
+          if git diff --quiet -- list/ru.list && git ls-files --error-unmatch list/ru.list >/dev/null 2>&1; then
+            echo "ru.list is already current"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- list/ru.list
+          git commit -m "Update Russia website rules"
+          git push origin HEAD:main
