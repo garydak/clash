@@ -2,7 +2,7 @@
 # Source: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ru.list
 # Upstream attribution: MetaCubeX/meta-rules-dat and v2fly/domain-list-community
 # Exact domains remain DOMAIN; +. domains become DOMAIN-SUFFIX.
-# Rule count: 1120
+# Rule count: 1130
 
 DOMAIN,1l-hit.mail.ru
 DOMAIN,1l-hit.vkplay.ru
@@ -308,7 +308,14 @@ DOMAIN-SUFFIX,bank131.com
 DOMAIN-SUFFIX,baranky.com
 DOMAIN-SUFFIX,bargipsy.com
 DOMAIN-SUFFIX,beeline.tv
+DOMAIN-SUFFIX,beget.app
+DOMAIN-SUFFIX,beget.cloud
 DOMAIN-SUFFIX,beget.com
+DOMAIN-SUFFIX,beget.de
+DOMAIN-SUFFIX,beget.hosting
+DOMAIN-SUFFIX,beget.pro
+DOMAIN-SUFFIX,beget.tech
+DOMAIN-SUFFIX,begetcdn.cloud
 DOMAIN-SUFFIX,best2pay.net
 DOMAIN-SUFFIX,bizmrg.com
 DOMAIN-SUFFIX,bk6bba-resources.com
@@ -851,6 +858,7 @@ DOMAIN-SUFFIX,sokolov.io
 DOMAIN-SUFFIX,sourcecraft.dev
 DOMAIN-SUFFIX,spasibo.digital
 DOMAIN-SUFFIX,spasibo.market
+DOMAIN-SUFFIX,sprut.io
 DOMAIN-SUFFIX,sputnikglobe.com
 DOMAIN-SUFFIX,sputnikimages.com
 DOMAIN-SUFFIX,sputnikmediabank.com
@@ -891,6 +899,8 @@ DOMAIN-SUFFIX,tildacdn.com
 DOMAIN-SUFFIX,tildacdn.net
 DOMAIN-SUFFIX,timeweb.cloud
 DOMAIN-SUFFIX,timeweb.com
+DOMAIN-SUFFIX,timeweb.tech
+DOMAIN-SUFFIX,timewebcloud.kz
 DOMAIN-SUFFIX,tinkoff-group.com
 DOMAIN-SUFFIX,tinkoff.ai
 DOMAIN-SUFFIX,tinkoffmobile.com
