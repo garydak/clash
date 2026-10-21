@@ -2,7 +2,7 @@
 # Source: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ru.list
 # Upstream attribution: MetaCubeX/meta-rules-dat and v2fly/domain-list-community
 # Exact domains remain DOMAIN; +. domains become DOMAIN-SUFFIX.
-# Rule count: 1147
+# Rule count: 1153
 
 DOMAIN,1l-hit.mail.ru
 DOMAIN,1l-hit.vkplay.ru
@@ -303,7 +303,9 @@ DOMAIN-SUFFIX,atomyze.tech
 DOMAIN-SUFFIX,attachmy.com
 DOMAIN-SUFFIX,autoru.me
 DOMAIN-SUFFIX,aviasales.com
+DOMAIN-SUFFIX,avito.com
 DOMAIN-SUFFIX,avito.st
+DOMAIN-SUFFIX,avito.tech
 DOMAIN-SUFFIX,avs.io
 DOMAIN-SUFFIX,baltnews.com
 DOMAIN-SUFFIX,baltnews.lt
@@ -495,6 +497,7 @@ DOMAIN-SUFFIX,groupib.us
 DOMAIN-SUFFIX,gw2ru.com
 DOMAIN-SUFFIX,haicomdc.com
 DOMAIN-SUFFIX,hayya.ae
+DOMAIN-SUFFIX,hellodoc.app
 DOMAIN-SUFFIX,hh.by
 DOMAIN-SUFFIX,hh.kz
 DOMAIN-SUFFIX,home.bank
@@ -624,6 +627,7 @@ DOMAIN-SUFFIX,maritimebank.com
 DOMAIN-SUFFIX,mc.yandex.ru
 DOMAIN-SUFFIX,mcc250.pub.3gppnetwork.org
 DOMAIN-SUFFIX,mcs.st
+DOMAIN-SUFFIX,medrocket.me
 DOMAIN-SUFFIX,medsi.com
 DOMAIN-SUFFIX,medsi.pro
 DOMAIN-SUFFIX,megafon.com
@@ -909,6 +913,8 @@ DOMAIN-SUFFIX,tdev.by
 DOMAIN-SUFFIX,tehnodom.com
 DOMAIN-SUFFIX,telega.info
 DOMAIN-SUFFIX,telega.me
+DOMAIN-SUFFIX,terratraf.com
+DOMAIN-SUFFIX,terratraf.io
 DOMAIN-SUFFIX,tilda.cc
 DOMAIN-SUFFIX,tilda.ws
 DOMAIN-SUFFIX,tildaapi.com
