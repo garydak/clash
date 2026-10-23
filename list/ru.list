@@ -2,7 +2,7 @@
 # Source: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ru.list
 # Upstream attribution: MetaCubeX/meta-rules-dat and v2fly/domain-list-community
 # Exact domains remain DOMAIN; +. domains become DOMAIN-SUFFIX.
-# Rule count: 1153
+# Rule count: 1156
 
 DOMAIN,1l-hit.mail.ru
 DOMAIN,1l-hit.vkplay.ru
@@ -408,6 +408,9 @@ DOMAIN-SUFFIX,drweb.com
 DOMAIN-SUFFIX,drweb.fr
 DOMAIN-SUFFIX,drweb.kz
 DOMAIN-SUFFIX,drweb.uz
+DOMAIN-SUFFIX,ds-servers.com
+DOMAIN-SUFFIX,dsn.host
+DOMAIN-SUFFIX,dsncdn.net
 DOMAIN-SUFFIX,durovscode.com
 DOMAIN-SUFFIX,e.mindbox.ru
 DOMAIN-SUFFIX,eadaily.com
