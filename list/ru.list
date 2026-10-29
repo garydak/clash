@@ -2,7 +2,7 @@
 # Source: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ru.list
 # Upstream attribution: MetaCubeX/meta-rules-dat and v2fly/domain-list-community
 # Exact domains remain DOMAIN; +. domains become DOMAIN-SUFFIX.
-# Rule count: 1156
+# Rule count: 1157
 
 DOMAIN,1l-hit.mail.ru
 DOMAIN,1l-hit.vkplay.ru
@@ -547,6 +547,7 @@ DOMAIN-SUFFIX,icqtutor.com
 DOMAIN-SUFFIX,icqvideo.com
 DOMAIN-SUFFIX,ideco.dev
 DOMAIN-SUFFIX,it-territory.com
+DOMAIN-SUFFIX,ivi.tv
 DOMAIN-SUFFIX,ivicdn.tv
 DOMAIN-SUFFIX,ixbt.com
 DOMAIN-SUFFIX,ixbt.games
