@@ -2,7 +2,7 @@
 # Source: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ru.list
 # Upstream attribution: MetaCubeX/meta-rules-dat and v2fly/domain-list-community
 # Exact domains remain DOMAIN; +. domains become DOMAIN-SUFFIX.
-# Rule count: 1159
+# Rule count: 1160
 
 DOMAIN,1l-hit.mail.ru
 DOMAIN,1l-hit.vkplay.ru
@@ -706,6 +706,7 @@ DOMAIN-SUFFIX,okolo.app
 DOMAIN-SUFFIX,opennet.dev
 DOMAIN-SUFFIX,oskelly.co
 DOMAIN-SUFFIX,ostin.com
+DOMAIN-SUFFIX,otzovik.com
 DOMAIN-SUFFIX,ozon.app
 DOMAIN-SUFFIX,ozon.by
 DOMAIN-SUFFIX,ozon.com
